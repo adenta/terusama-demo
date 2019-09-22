@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>DentaCo Trucking Pre-Checkin</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    input{
+      width: 100%;
+    }
+    body{
+      padding:10%;
+    }
+
+    #submit input{
+      font-size: 30em;
+
+    }
+  </style>
+</head>
+
+<body>
+<div id='first'>
+  <h1>Welcome to DentaCo!</h1>
+  <form>
+  <p>Purchase Order Number:</p>
+  <input type="text" name="purchaseOrderNumber" value="PO-39204">
+  <br>
+  <p>Driver ID Number:</p>
+  <input type="text" name="driverIdNumber" value="4829750">
+  <br>
+  <p>Facility Code:</p>
+  <input type="text" name="facilityCode">
+  <br>
+  <br>
+  <div id="submit"><input type="button" value="Submit" onclick="switchScreens()"></div>
+</form>
+</div>
+<div id='second' style="display:none;">
+    <h1>Success! Gates will be opening shortly.</h1>
+  </div>
+    <script>
+
+   function switchScreens(){
+      document.getElementById('first').style.display='none';
+      setTimeout(function(){document.getElementById('second').style.display='inline';},984);
+    }
+    </script>
+</body>
+
+</html>
