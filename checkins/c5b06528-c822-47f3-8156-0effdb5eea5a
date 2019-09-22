@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>DentaCo Trucking Pre-Checkin</title>
+  <title>Water Bottle Trucking Pre-Checkin</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
     input{
@@ -17,7 +17,7 @@
 
 <body>
 <div id='first'>
-  <h1>Welcome to DentaCo!</h1>
+  <h1>Welcome to Water Bottle Co!</h1>
   <form>
   <p>Purchase Order Number:</p>
   <input type="text" name="purchaseOrderNumber" value="PO-39204">
